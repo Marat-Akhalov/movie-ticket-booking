@@ -1,10 +1,16 @@
+@use '../abstract/vars' as *;
+
 html {
   box-sizing: border-box;
-  background-color: crimson;
+  background-color: var(--clr-bg);
 }
 
 *,
 *::after,
 *::before {
   box-sizing: inherit;
+}
+
+.page__body {
+  font-family: var(--font-family);
 }
