@@ -1,0 +1,28 @@
+@mixin font-face($font-family, $url, $weight, $style) {
+  @font-face {
+    font-family: '#{$font-family}';
+    src: local('#{$font-family}') url('@/fonts/#{$url}.woff2') format('woff2');
+    font-weight: #{$weight};
+    font-display: swap;
+    font-style: $style;
+  }
+}
+
+@mixin flex-v-center($wrap: nowrap) {
+  display: flex;
+  flex-wrap: #{$wrap};
+  align-items: center;
+}
+
+@mixin flex-h-center($wrap: nowrap) {
+  display: flex;
+  flex-wrap: #{$wrap};
+  justify-content: center;
+}
+
+@mixin flex-all-center($wrap: nowrap) {
+  display: flex;
+  flex-wrap: #{$wrap};
+  justify-content: center;
+  align-items: center;
+}
