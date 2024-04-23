@@ -15,7 +15,30 @@
 
 <body class="page__body">
   <div class="site-container">
-
+    <section class="movie">
+      <div class="container">
+        <label class="movie__label">
+          <option class="movie__option" value="10">Avengers: Endgame (10$)</option>
+          <option class="movie__option" value="12">Joker (12$)</option>
+          <option class="movie__option" value="8">Toy Story (8$)</option>
+          <option class="movie__option" value="9">The Lion King (8$)</option>
+        </label>
+        <ul class="movie__showcase showcase list-reset">
+          <li class="showcase__item">
+            <div class="showcase__seat"></div>
+            <small class="showcase__status">N/A</small>
+          </li>
+          <li class="showcase__item">
+            <div class="showcase__seat showcase__seat--selected"></div>
+            <small class="showcase__status">Selected</small>
+          </li>
+          <li class="showcase__item">
+            <div class="showcase__seat showcase__seat--occupied"></div>
+            <small class="showcase__status">Occupied</small>
+          </li>
+        </ul>
+      </div>
+    </section>
   </div>
 </body>
 

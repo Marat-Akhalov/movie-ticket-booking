@@ -13,4 +13,10 @@ html {
 
 .page__body {
   font-family: var(--font-family);
+  color: var(--clr-light);
+}
+
+.list-reset {
+  padding: 0;
+  list-style: none;
 }
