@@ -1,0 +1,15 @@
+.hall {
+  perspective: 1000px;
+
+  &__screen {
+    border: 2px solid var(--clr-primary);
+    border-radius: 12px;
+    width: 420px;
+    min-height: 140px;
+    background-color: rgba($color: #fff, $alpha: 0.8);
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: rotateX(-35deg);
+  }
+}
