@@ -4,7 +4,7 @@
   &__screen {
     border: 2px solid var(--clr-primary);
     border-radius: 12px;
-    padding-bottom: 68px;
+    margin-bottom: 24px;
     width: 420px;
     min-height: 140px;
     background-color: rgba($color: #fff, $alpha: 0.8);
@@ -12,5 +12,35 @@
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     transform: rotateX(-35deg);
+  }
+
+  &__seats-place {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: auto;
+  }
+
+  &__seats {
+    display: flex;
+    gap: 12px;
+  }
+
+  &__seat {
+    cursor: pointer;
+
+    &:hover {
+      svg {
+        fill: var(--clr-primary-dark);
+      }
+    }
+
+    svg {
+      width: 30px;
+      height: 30px;
+      fill: var(--clr-primary);
+      transition: fill 0.2s ease;
+    }
   }
 }
