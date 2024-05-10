@@ -21,6 +21,13 @@ html {
   list-style: none;
 }
 
+.btn-reset {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
