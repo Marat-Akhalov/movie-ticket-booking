@@ -33,3 +33,18 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.page__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+  max-width: var(--container-width);
+}
