@@ -2,6 +2,7 @@
   perspective: 1000px;
 
   &__screen {
+    position: relative;
     border: 2px solid var(--clr-primary);
     border-radius: 12px;
     margin-bottom: 24px;
@@ -12,7 +13,64 @@
     box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    transform: rotateX(-35deg);
+    transform: rotateX(-45deg);
+    overflow: hidden;
+    opacity: 0.8;
+    animation: fade-in 3s infinite;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 10px;
+      width: calc(100% / 2);
+      height: 70px;
+      background-color: crimson;
+      filter: blur(45px);
+      animation: pulse-and-move 4s infinite;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 70px;
+      border-radius: 10px;
+      width: calc(100% / 2);
+      height: 70px;
+      background-color: crimson;
+      filter: blur(45px);
+      animation: pulse-and-move 3s infinite;
+    }
+  }
+
+  @keyframes pulse-and-move {
+    0% {
+      transform: scale(0.85) translate(0%, 0%);
+    }
+
+    50% {
+      transform: scale(1.2) translate(60%, 40%);
+    }
+
+    100% {
+      transform: scale(0.85) translateX(0%, 0%);
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0.8;
+    }
+
+    50% {
+      opacity: 0.6;
+    }
+
+    100% {
+      opacity: 0.8;
+    }
   }
 
   &__seats-place {
