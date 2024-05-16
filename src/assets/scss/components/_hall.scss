@@ -87,11 +87,12 @@
   }
 
   &__seat {
+    display: flex;
     cursor: pointer;
 
     &:hover {
       svg {
-        fill: var(--clr-primary-dark);
+        fill: var(--clr-primary-light);
       }
     }
 
@@ -101,11 +102,31 @@
       outline-offset: 4px;
     }
 
+    &:active {
+      svg {
+        transform: scale(1.1) rotate(180deg);
+      }
+    }
+
     svg {
       width: 30px;
       height: 30px;
       fill: var(--clr-primary);
-      transition: fill 0.2s ease;
+      transition: fill 0.2s ease, transform 0.2s ease;
+    }
+
+    &--occupied {
+      pointer-events: none;
+
+      svg {
+        fill: #d4d4d4;
+      }
+    }
+
+    &--selected {
+      svg {
+        fill: var(--clr-primary-dark);
+      }
     }
   }
 }
