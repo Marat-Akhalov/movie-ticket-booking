@@ -124,6 +124,12 @@
     }
 
     &--selected {
+      &:hover {
+        svg {
+          fill: var(--clr-primary-dark);
+        }
+      }
+
       svg {
         fill: var(--clr-primary-dark);
       }
