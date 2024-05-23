@@ -24,7 +24,7 @@
   <div class="site-container">
     <section class="movie">
       <div class="container">
-        <form class="movie__select select-movie">
+        <!-- <form class="movie__select select-movie">
           <fieldset class="select-movie__fieldset">
             <legend class="select-movie__legend visually-hidden">Choose the movie</legend>
             <label class="select-movie__label">
@@ -35,6 +35,28 @@
                 <option class="select-movie__option" value="8">Toy Story (8$)</option>
                 <option class="select-movie__option" value="9">The Lion King (8$)</option>
               </select>
+            </label>
+          </fieldset>
+        </form> -->
+        <form class="movie__select select-movie">
+          <fieldset class="select-movie__fieldset">
+            <legend class="select-movie__legend visually-hidden">Choose the movie</legend>
+            <label class="select-movie__label">
+              Select a movie
+              <button
+                class="select-movie__select btn-reset"
+                role="combobox"
+                aria-controls="listbox"
+                aria-haspopup="listbox"
+                aria-expanded="false"
+                tabindex="0"
+                type="button">Avengers: Endgame (10$)</button>
+              <ul class="select-movie__list list-reset" role="listbox">
+                <li class="select-movie__option" role="option">Avengers: Endgame (10$)</li>
+                <li class="select-movie__option" role="option">Joker (12$)</li>
+                <li class="select-movie__option" role="option">Toy Story (8$)</li>
+                <li class="select-movie__option" role="option">The Lion King (8$)</li>
+              </ul>
             </label>
           </fieldset>
         </form>
