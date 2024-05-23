@@ -18,7 +18,7 @@
     border: 2px solid transparent;
     border-radius: 8px;
     padding: 8px 12px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--clr-light);
     appearance: none;
     outline: none;
@@ -40,15 +40,16 @@
     flex-direction: column;
     // gap: 8px;
     border-radius: 8px;
-    padding: 8px;
-    padding-top: 12px;
+    padding: 4px;
     background-color: var(--clr-primary-dark);
   }
 
   &__option {
     border-radius: 4px;
-    padding: 4px;
+    padding: 8px 4px;
+    font-size: 1rem;
     background-color: var(--clr-primary-dark);
+    cursor: pointer;
 
     &:hover {
       background-color: rgba($color: #218ca7, $alpha: 0.8);
