@@ -2,7 +2,7 @@
   @font-face {
     font-family: '#{$font-family}';
     src: local('#{$font-family}'),
-      url('~/src/resources/fonts/#{$url}.woff2') format('woff2');
+      url('~/resources/fonts/#{$url}.woff2') format('woff2');
     font-weight: #{$weight};
     font-display: swap;
     font-style: $style;
