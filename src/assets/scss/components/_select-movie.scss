@@ -53,6 +53,32 @@
     border-radius: 8px;
     padding: 4px;
     background-color: var(--clr-primary-dark);
+    transform: scale(0);
+    opacity: 0;
+    visibility: hidden;
+
+    &--active {
+      animation: pop-up 0.2s ease-out forwards;
+    }
+  }
+
+  @keyframes pop-up {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    50% {
+      transform: scale(0.7);
+      opacity: 0.5;
+    }
+
+    100% {
+      transform: scale(1);
+      opacity: 1;
+      visibility: visible;
+    }
   }
 
   &__option {

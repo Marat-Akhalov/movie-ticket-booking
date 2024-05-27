@@ -38,20 +38,21 @@
             </label>
           </fieldset>
         </form> -->
-        <form class="movie__select select-movie">
+        <form class="movie__select select-movie" id="select-movie">
           <fieldset class="select-movie__fieldset">
             <legend class="select-movie__legend visually-hidden">Choose the movie</legend>
             <label class="select-movie__label">Choose a movie:</label>
             <div class="select-movie__group">
               <button
                 class="select-movie__select btn-reset"
+                id="select-open"
                 role="combobox"
                 aria-controls="listbox"
                 aria-haspopup="listbox"
                 aria-expanded="false"
                 tabindex="0"
                 type="button">Challengers (8$)</button>
-              <ul class="select-movie__list list-reset" role="listbox">
+              <ul class="select-movie__list select-movie__list--open list-reset" id="select-list" role="listbox">
                 <li class="select-movie__option" role="option">Kingdom of the Planet of the Apes (10$)</li>
                 <li class="select-movie__option" role="option">Furiosa: A Mad Max Saga (12$)</li>
                 <li class="select-movie__option" role="option">Challengers (8$)</li>
