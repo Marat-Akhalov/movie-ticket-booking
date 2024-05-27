@@ -2,6 +2,10 @@ const selectForm = document.querySelector('#select-movie');
 const select = document.querySelector('#select-open');
 const selectList = document.querySelector('#select-list');
 
-select.addEventListener('click', e => {
+const toggleSelect = () => {
   selectList.classList.toggle('select-movie__list--active');
+};
+
+select.addEventListener('click', e => {
+  toggleSelect();
 });
