@@ -20,6 +20,18 @@ const toggleSelectList = () => {
 
 const closeSelectList = () => {
   elements.selectList.classList.remove('select-movie__list--active');
+  isSelectOpen = !isSelectOpen;
+  elements.select.setAttribute('aria-expanded', `${isSelectOpen}`);
 };
 
+const handleOptionClick = e => {
+  const option = e.target.closest('.select-movie__option');
+
+  if (!option) return;
+
+  elements.select.textContent = option.textContent;
+  closeSelectList();
+};
+
+elements.selectList.addEventListener('click', handleOptionClick);
 elements.select.addEventListener('click', toggleSelectList);
